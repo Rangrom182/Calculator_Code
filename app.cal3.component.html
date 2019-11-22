@@ -1,0 +1,12 @@
+<h1 class="calc3-h1">{{calculatorMainTitle}}</h1>
+<p>This is calculator 3 embeded inside of Calculator 2</p>
+
+<form [formGroup]="frmMain">
+    <input type="number" formControlName="var1">
+    <br>
+    <input type="number" formControlName="var2">
+    <br>
+    <button (click)="add()">Add</button>
+    <br>
+    <div>Result: <strong>{{resultValue}}</strong></div>
+</form>
